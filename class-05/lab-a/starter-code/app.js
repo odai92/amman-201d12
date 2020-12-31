@@ -141,6 +141,7 @@ function multiplyArray(multArr) { //eslint-disable-line
     return questionFiveReturnArray;
 }
 
+
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
 
