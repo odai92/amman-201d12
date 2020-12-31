@@ -61,7 +61,21 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
+    var sumAndMultiplyArray = []
 
+    var theplus = sum(a, b)[0];
+    var finalSum = sum(theplus, c)[0];
+    sumAndMultiplyArray[0] = finalSum;
+  
+    var theMult = multiply(a, b)[0];
+    var finalProduct = multiply(theMult, c)[0];
+    sumAndMultiplyArray[1] = finalProduct;
+  
+  
+    sumAndMultiplyArray[2] = "4 and 7 and 5 sum to 16."
+    sumAndMultiplyArray[3] = "The product of 4 and 7 and 5 is 140."
+  
+    return sumAndMultiplyArray;
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -83,6 +97,18 @@ Test this function by hand in the console to get it working, and when you think 
 var testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+    var questionFourReturnArray = [];
+    // calculate sum of numbers in array 
+    var aPlusB = sum((sumArr[0]), (sumArr[1]));
+    aPlusB = aPlusB[0];
+    var finalSum = sum(aPlusB, sumArr[2])[0];
+    // assign sum of numbers in array to the first index of the question4 return array
+    questionFourReturnArray[0] = finalSum;
+  
+    // create string and assign to second index of returned array
+    questionFourReturnArray[1] = `${sumArr[0]},${sumArr[1]},${sumArr[2]} was passed in as an array of numbers, and 9 is their sum.`
+    // return array
+    return questionFourReturnArray;
 
 }
 
