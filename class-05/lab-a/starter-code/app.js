@@ -40,7 +40,6 @@ function multiply(a, b) { //eslint-disable-line
     ];
 
     return returnArray;
-
 }
 
 // Here is the test for multiply(); uncomment it to run it
